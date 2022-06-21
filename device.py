@@ -3,7 +3,7 @@ from abc import ABCMeta, abstractmethod
 
 class Device(metaclass=ABCMeta):
     @abstractmethod
-    def select_tasks(self) -> bool:
+    def is_enabled(self) -> bool:
         raise NotImplementedError
 
     @abstractmethod

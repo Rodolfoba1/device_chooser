@@ -6,6 +6,7 @@ class Tv(Device):
         self.__channel: int = 0
         self.__percent: int = 0
         self.__enable: bool = False
+        self.__lista_channel: List = ['1', '2', '3', '4', '5', '6', '7']
 
     def is_enabled(self) -> bool:
         return self.__enable
@@ -25,5 +26,11 @@ class Tv(Device):
     def get_channel(self) -> int:
         return self.__channel
 
-    def set_channel(self, channel: str) -> None:
+    def set_channel(self, channel: int) -> None:
         self.__channel = channel
+
+    def get_channel_name(self) -> str:
+        return self.__lista_channel[self.__channel]
+
+    def get_max_channel(self) -> int:
+        return self.__lista_channel.__len__() - 1

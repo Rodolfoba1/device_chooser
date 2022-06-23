@@ -26,5 +26,11 @@ class SmartTv(Device):
     def get_channel(self) -> int:
         return self.__channel
 
-    def set_channel(self, channel: str) -> None:
+    def set_channel(self, channel: int) -> None:
         self.__channel = channel
+
+    def get_channel_name(self) -> str:
+        return self.__lista_channel[self.__channel]
+
+    def get_max_channel(self) -> int:
+        return self.__lista_channel.__len__() - 1

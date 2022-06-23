@@ -19,7 +19,7 @@ class Device(metaclass=ABCMeta):
         raise NotImplementedError
 
     @abstractmethod
-    def set_volumne(self, percent: float) -> None:
+    def set_volume(self, percent: int) -> None:
         raise NotImplementedError
 
     @abstractmethod
@@ -28,4 +28,12 @@ class Device(metaclass=ABCMeta):
 
     @abstractmethod
     def set_channel(self, channel: int) -> None:
+        raise NotImplementedError
+
+    @abstractmethod
+    def get_channel_name(self) -> str:
+        raise NotImplementedError
+
+    @abstractmethod
+    def get_max_channel(self) -> int:
         raise NotImplementedError

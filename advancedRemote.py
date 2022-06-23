@@ -1,6 +1,7 @@
 from remote import Remote
 from device import Device
 
+
 class AdvancedRemote(Remote):
 
     def __init__(self, nuevo: Device):
@@ -22,7 +23,6 @@ class AdvancedRemote(Remote):
             print(f'Volumen = {self.device.get_volume()}')
         else:
             print(f'Debe encenderlo')
-
 
     def volume_up(self):
         if self.device.is_enabled():

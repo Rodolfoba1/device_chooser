@@ -5,9 +5,10 @@ from tv import Tv
 from smartTv import SmartTv
 from datetime import datetime
 import time
+
+
 # RODOLFO BACILIO CHIVALAN DE LEON     1561817
 # DIEGO ANDRES VELIZ                   1230019
-
 
 
 def main():
@@ -25,7 +26,7 @@ def main():
             print(f'Regresando')
 
 
-def aparatos() -> [Device | None ]:
+def aparatos() -> [Device | None]:
     option: int = 0
     while option != 4:
         print("-".center(55, "-") + '|')

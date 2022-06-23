@@ -6,7 +6,7 @@ class SmartTv(Device):
         self.__channel: int = 0
         self.__percent: int = 0
         self.__enable: bool = False
-        self.__lista_channel: List = ['Prime', 'Hulu', 'HBO', 'Netflix', 'Disney+']
+        self.__list_channel: List = ['Prime', 'Hulu', 'HBO', 'Netflix', 'Disney+']
 
     def is_enabled(self) -> bool:
         return self.__enable

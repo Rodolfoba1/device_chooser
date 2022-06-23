@@ -1,4 +1,5 @@
 from device import Device
+<<<<<<< HEAD
 from abc import abstractmethod
 
 class Remote:
@@ -29,3 +30,9 @@ class Remote:
     @abstractmethod
     def mute(self):
         raise NotImplementedError
+=======
+
+class Remote:
+    def __init__(self, device: Device):
+        self.device: Device = device
+>>>>>>> 402c04f842cef8cea40c233a4f28a814de46cd87

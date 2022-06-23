@@ -1,7 +1,6 @@
 from remote import Remote
 from device import Device
 
-
 class AdvancedRemote(Remote):
 
     def __init__(self, nuevo: Device):
